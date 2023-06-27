@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <script type="text/javascript">
+            function demoInternalAlert(){
+                alert("Internal Alert");
+            }
+            function demoInternalConfirm(){
+                if(confirm("Are you sure...")){
+                    alert("YESS");
+                }
+                else{
+                    alert("NOOO");
+                }
+            }
+            function demoInternalPromrt(){
+                var fName=prompt("Enter Firstname Here....");
+                var lName=prompt("Enter Lastname Here....");
+                alert(fName+" "+lName);
+            }
+            // function bodyBGGreen(){
+            //     document body Style
+            //     backgroundColor="Green"
+            // }
+        </script>
+        <script>
+            function demoExternalAlert(){
+                alert("Internal Alert");
+            }
+            function demoExternalConfirm(){
+                if(confirm("Are you sure...")){
+                    alert("YESS");
+                }
+                else{
+                    alert("NOOO");
+                }
+            }
+            function demoExternalPromrt(){
+                var fName=prompt("Enter Firstname Here....");
+                var lName=prompt("Enter Lastname Here....");
+                alert(fName+" "+lName);
+            }
+            function bodyBGGreen(){
+                document.body.style.backgroundcolor="green";
+            }
+            function divBGGray(){
+                document.getElementById("D1").style.backgroundcolor="gray";
+            }
+            function divBGDynamic(){
+                document.getElementById("D1").style.background=prompt("enter color name here...")
+            }
+            function bodyBGCP1(){
+                document.body.style.backgroundColor=document.getElementById(CP1).value;
+            }
+            function bodyBGCP2(){
+                document.getElementById("D1").style.backgroundColor=document.getElementById("CP1").value;
+            }
+        </script>
+        <script scr=""
+        type="text/javascipt"
+        <script scr="" type="text/javascript"></script>
+    </head>
+    <body>
+        
+        <input type="button" value="Alert Inline" onclick="alert('Hello Guys')" />&nbsp;&nbsp;
+        <input type="button" value="Confirm Inline" onclick="confirm('Are you sure...')" />&nbsp;&nbsp;
+        <input type="button" value="Prompt Inline" onclick="prompt('Enter Firstname Here....')" />&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="Alert Internal" onclick="demoInternalAlert()" />&nbsp;&nbsp;
+        <input type="button" value="Confirm Internal" onclick="demoInternalConfirm()" />&nbsp;&nbsp;
+        <input type="button" value="Prompt Internal" onclick="demoInternalPromrt()" />&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="Alert External" onclick="demoExternalAlert()" />&nbsp;&nbsp;
+        <input type="button" value="Confirm External" onclick="demoExternalConfirm()" />&nbsp;&nbsp;
+        <input type="button" value="Prompt External" onclick="demoExternalPromrt()" />&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="Body Bg Green" onclick="bodyBGGreen()" />&nbsp;&nbsp;
+        <input type="button" value="Div Bg Gray" onclick="divBGGray()" />&nbsp;&nbsp;
+        <hr/>
+        <input type="button" value="Body Bg Prompt" onclick="bodyBGDynamic()" />&nbsp;&nbsp;
+        <input type="button" value="Div Bg Prompt" onclick="divBGDynamic()" />&nbsp;&nbsp;
+        <hr/>
+        <input type="color" id="CP1" onchange="bodyBGCP1()" />&nbsp;&nbsp;
+        <input type="color" id="CP2" onchange="bodyBGCP2()" />&nbsp;&nbsp;
+        <hr/>
+    </body>
+</html>
